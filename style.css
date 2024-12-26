@@ -1,0 +1,603 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: auto;
+    font-family: Arial, sans-serif;
+}
+
+.sec1 {
+    background: url("space.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.navlinks {
+    display: flex;
+    margin: 25px;
+    left: 5px;
+    flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header1 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* ...............................I HAD COPIED THIS FROM A.I................................ */
+.navlinks {
+    position: relative;
+    /* Position relative for the pseudo-element */
+}
+
+.navlinks a {
+    text-decoration: none;
+    /* Remove default underline */
+    color: rgb(252, 252, 252);
+    /* Set link color */
+    padding: 5px 0;
+    /* Add some padding */
+    position: relative;
+    /* Position relative for the pseudo-element */
+    font-size: small;
+    margin-left: 25px;
+}
+
+.navlinks a::after {
+    content: '';
+    /* Required for pseudo-element */
+    display: block;
+    /* Make it a block element */
+    height: 2px;
+    /* Height of the underline */
+    background: rgb(247, 242, 242);
+    /* Color of the underline */
+    position: absolute;
+    /* Position it absolutely */
+    left: 0;
+    /* Align to the left */
+    bottom: -6px;
+    /* Position it below the text */
+    width: 0;
+    /* Start with width 0 */
+    transition: width 0.3s ease;
+    /* Transition effect */
+}
+
+.navlinks a:hover::after {
+    width: 100%;
+    /* Full width on hover */
+}
+
+/*......................................TILL HERE..........................................*/
+.logo {
+    position: relative;
+    left: 35px;
+    height: fit-content;
+}
+
+.logo img {
+    background-color: #FFFFff;
+    height: 25px;
+    z-index: -1;
+}
+
+.navbar {
+    position: sticky;
+    top: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    width: 100%;
+}
+
+.launch1 {
+    position: absolute;
+    top: 50vh;
+    left: 35px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.launch1 p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.launch1 h2 {
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-size: 43px;
+    line-height: 48px;
+    animation: heading 0.5s ease-in 0s 1;
+}
+
+.launch1 button {
+
+    opacity: 1;
+    visibility: inherit;
+    background-color: transparent;
+    color: #FFFFff;
+    border: 3px solid #FFFFff;
+    padding: 17px;
+    margin-top: 30px;
+    width: 14vw;
+    transition: background-color 0.5s ease-in, color 0.5s ease;
+    animation: button1 0.5s ease-in 0s 1;
+
+}
+
+.launch1 button:hover {
+    background-color: #FFFFff;
+    color: black;
+
+}
+
+.launch1 {
+    height: 25vh;
+    width: 38vw;
+}
+
+.launch1 p {
+    margin-bottom: 8px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    transition: all;
+    animation: para 0.5s ease-in 0s 1;
+}
+
+@keyframes para {
+    from {
+        transform: translateY(4rem);
+        transition: ease-in;
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes heading {
+    from {
+        transform: translateY(5rem);
+        transition: ease-in;
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes button1 {
+    from {
+        transform: translateY(6rem);
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+.starlinklaunch {
+    background: url("downimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.launch2 {
+    position: absolute;
+    top: 170vh;
+    left: 35px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.launch2 h2 {
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-size: 43px;
+    line-height: 48px;
+    animation: heading2 0.5s ease-in 0s 1;
+}
+
+.launch2 button {
+
+    opacity: 1;
+    visibility: inherit;
+    background-color: transparent;
+    color: #FFFFff;
+    border: 3px solid #FFFFff;
+    padding: 17px;
+    margin-top: 30px;
+    width: 14vw;
+    transition: background-color 0.5s ease-in, color 0.5s ease;
+    animation: button2 0.5s ease-in 0s 1;
+
+}
+
+.launch2 button:hover {
+    background-color: #FFFFff;
+    color: black;
+
+}
+
+.launch2 p {
+    color: #FFFFff;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    transition: all;
+    animation: para2 0.5s ease-in 0s 1;
+}
+
+.launch2 {
+    height: 25vh;
+    width: 38vw;
+}
+
+@keyframes para2 {
+    from {
+        transform: translateY(4rem);
+        transition: ease-in;
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes heading2 {
+    from {
+        transform: translateY(5rem);
+        transition: ease-in;
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes button2 {
+    from {
+        transform: translateY(6rem);
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+.sec3 {
+    background: url("sec3img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.launch3 {
+    position: absolute;
+    top: 290vh;
+    left: 35px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.launch3 h2 {
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-size: 43px;
+    line-height: 48px;
+    animation: heading3 0.5s ease-in 0s 1;
+}
+
+.launch3 button {
+
+    opacity: 1;
+    visibility: inherit;
+    background-color: transparent;
+    color: #FFFFff;
+    border: 3px solid #FFFFff;
+    padding: 17px;
+    margin-top: 30px;
+    width: 14vw;
+    transition: background-color 0.5s ease-in, color 0.5s ease;
+    animation: button3 0.5s ease-in 0s 1;
+
+}
+
+.launch3 button:hover {
+    background-color: #FFFFff;
+    color: black;
+
+}
+
+.launch3 p {
+    color: #FFFFff;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    transition: all;
+    animation: para3 0.5s ease-in 0s 1;
+}
+
+.launch3 {
+    height: 25vh;
+    width: 38vw;
+}
+
+@keyframes para3 {
+    from {
+        transform: translateY(4rem);
+        transition: ease-in;
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes heading3 {
+    from {
+        transform: translateY(5rem);
+        transition: ease-in;
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes button3 {
+    from {
+        transform: translateY(6rem);
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+.sec4 {
+    background: url("evasuit.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.launch4 {
+    position: absolute;
+    top: 395vh;
+    left: 35px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.launch4 h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: bolder;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-size: 43px;
+    line-height: 48px;
+    animation: heading4 0.5s ease-in 0s 1;
+}
+
+.launch4 button {
+
+    opacity: 1;
+    visibility: inherit;
+    background-color: transparent;
+    color: #FFFFff;
+    border: 3px solid #FFFFff;
+    padding: 17px;
+    margin-top: 30px;
+    width: 14vw;
+    transition: background-color 0.5s ease-in, color 0.5s ease;
+    animation: button4 0.5s ease-in 0s 1;
+
+}
+
+.launch4 button:hover {
+    background-color: #FFFFff;
+    color: black;
+
+}
+
+.launch4 {
+    height: 25vh;
+    width: 38vw;
+}
+
+@keyframes heading4 {
+    from {
+        transform: translateY(5rem);
+        transition: ease-in;
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes button4 {
+    from {
+        transform: translateY(6rem);
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+.sec5 {
+    background: url("make_life.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.launch5 {
+    position: absolute;
+    top: 500vh;
+    left: 35px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.launch5 h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: bolder;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-size: 43px;
+    line-height: 48px;
+    animation: heading5 0.5s ease-in 0s 1;
+}
+
+.launch5 button {
+
+    opacity: 1;
+    visibility: inherit;
+    background-color: transparent;
+    color: #FFFFff;
+    border: 3px solid #FFFFff;
+    padding: 17px;
+    margin-top: 30px;
+    width: 14vw;
+    transition: background-color 0.5s ease-in, color 0.5s ease;
+    animation: button5 0.5s ease-in 0s 1;
+
+}
+
+.launch5 button:hover {
+    background-color: #FFFFff;
+    color: black;
+
+}
+
+.launch5 {
+    height: 25vh;
+    width: 38vw;
+}
+
+@keyframes heading5 {
+    from {
+        transform: translateY(5rem);
+        transition: ease-in;
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes button5 {
+    from {
+        transform: translateY(6rem);
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+.end {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    background-color: black;
+}
+
+.copy p {
+    color: #FFFFff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-right: 25px;
+}
+
+.privacy {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+.privacy a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #FFFFff;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.suppliers {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+.suppliers a {
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #FFFFff;
+    transition: color 0.5s ease;
+}
+
+.privacy a:hover,
+.suppliers a:hover {
+    color: rgb(149, 144, 144);
+}
