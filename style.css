@@ -94,6 +94,7 @@ html {
 }
 
 .logo img {
+     filter: invert(1);
     background-color: #FFFFff;
     height: 25px;
     z-index: -1;
